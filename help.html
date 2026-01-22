@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WordLite Help</title>
+    <style>
+      :root {
+        --bg: #f3f5f8;
+        --surface: #ffffff;
+        --text: #1c1f24;
+        --text-muted: #5a606c;
+        --accent: #1f63b5;
+        --border: #d5dbe5;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI Variable", "Segoe UI", "Calibri", "Candara", "Trebuchet MS", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      header {
+        padding: 24px 32px 12px;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      header p {
+        margin: 6px 0 0;
+        color: var(--text-muted);
+        font-size: 13px;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 24px 32px 48px;
+      }
+
+      section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-bottom: 16px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 18px;
+        color: var(--accent);
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .shortcuts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 32px;
+      }
+
+      .shortcut-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        padding-bottom: 6px;
+        border-bottom: 1px dashed var(--border);
+        font-size: 14px;
+      }
+
+      .shortcut-item span {
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 720px) {
+        .shortcuts {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WordLite Help</h1>
+      <p>Version 1.6 · Quick reference for features, limits, and shortcuts.</p>
+    </header>
+    <main>
+      <section>
+        <h2>Quick Start</h2>
+        <ul>
+          <li>Open the File menu for New, Open, Save, Save As, and Print.</li>
+          <li>Use the Formatting menu for fonts, headings, alignment, and lists.</li>
+          <li>Use Insert for tables and images.</li>
+          <li>Undo and redo up to 15 actions in the History section.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Find and Replace</h2>
+        <ul>
+          <li>Open Find with Ctrl/Cmd+F or the Find menu button.</li>
+          <li>Open Replace with Ctrl/Cmd+H.</li>
+          <li>Match case toggles exact case matching.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>File Formats</h2>
+        <ul>
+          <li>TXT: plain text export and import.</li>
+          <li>Markdown: basic headings, lists, bold, italic, and inline code.</li>
+          <li>RTF: basic text and inline styles.</li>
+          <li>DOCX: export supports paragraphs, headings, lists; import is basic text, headings, lists.</li>
+          <li>PDF: export uses the browser print dialog.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tables and Images</h2>
+        <ul>
+          <li>Insert tables from the Insert menu (rows and columns).</li>
+          <li>Insert images from your device; images are embedded in the document.</li>
+          <li>DOCX export represents images as [Image] placeholders.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Palettes and Theme</h2>
+        <ul>
+          <li>Use the Palette selector to theme the ribbon (5 variants).</li>
+          <li>Use the Theme button for light or dark mode.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Shortcuts</h2>
+        <div class="shortcuts">
+          <div class="shortcut-item"><strong>New</strong><span>Ctrl/Cmd+N</span></div>
+          <div class="shortcut-item"><strong>Open</strong><span>Ctrl/Cmd+O</span></div>
+          <div class="shortcut-item"><strong>Save</strong><span>Ctrl/Cmd+S</span></div>
+          <div class="shortcut-item"><strong>Save As</strong><span>Ctrl/Cmd+Shift+S</span></div>
+          <div class="shortcut-item"><strong>Print</strong><span>Ctrl/Cmd+P</span></div>
+          <div class="shortcut-item"><strong>Find</strong><span>Ctrl/Cmd+F</span></div>
+          <div class="shortcut-item"><strong>Replace</strong><span>Ctrl/Cmd+H</span></div>
+          <div class="shortcut-item"><strong>Undo</strong><span>Ctrl/Cmd+Z</span></div>
+          <div class="shortcut-item"><strong>Redo</strong><span>Ctrl/Cmd+Shift+Z or Ctrl/Cmd+Y</span></div>
+          <div class="shortcut-item"><strong>Cut</strong><span>Ctrl/Cmd+X</span></div>
+          <div class="shortcut-item"><strong>Copy</strong><span>Ctrl/Cmd+C</span></div>
+          <div class="shortcut-item"><strong>Paste</strong><span>Ctrl/Cmd+V</span></div>
+          <div class="shortcut-item"><strong>Bold</strong><span>Ctrl/Cmd+B</span></div>
+          <div class="shortcut-item"><strong>Italic</strong><span>Ctrl/Cmd+I</span></div>
+          <div class="shortcut-item"><strong>Underline</strong><span>Ctrl/Cmd+U</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Limitations</h2>
+        <ul>
+          <li>PDF import is not supported.</li>
+          <li>DOCX import is limited to basic text, headings, and lists.</li>
+          <li>Markdown support is intentionally lightweight.</li>
+          <li>Undo/redo tracks the last 15 content changes.</li>
+          <li>Paste may require clipboard permission depending on the browser.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Storage</h2>
+        <ul>
+          <li>Automatic snapshots are saved in localStorage (last 5).</li>
+          <li>No data is sent to a server; everything stays in the browser.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
